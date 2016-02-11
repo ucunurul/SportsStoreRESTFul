@@ -1,4 +1,9 @@
 ﻿@model IEnumerable<SportsStoreREST.Models.Product>
+<div class="panel panel-primary ">
+    <a href="/prep/signin" class="btn btn-sm btn-primary">Masuk aja gan</a>
+    <a href="/prep/signout" class="btn btn-sm btn-primary">Keluar aja deh gan</a>
+    User: @(HttpContext.Current.User.Identity.Name)
+</div>
 <div class="panel panel-primary">
     <div class="panel-heading">Products</div>
     <table class="table table-striped">
